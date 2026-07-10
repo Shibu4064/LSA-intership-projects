@@ -1,0 +1,25 @@
+{
+  "dataset": "dair-ai/emotion",
+  "train_rows": 16000,
+  "test_rows": 2000,
+  "labels": [
+    "sadness",
+    "joy",
+    "love",
+    "anger",
+    "fear",
+    "surprise"
+  ],
+  "test_accuracy": 0.866,
+  "weakest_class_by_f1": "surprise",
+  "weakest_class_f1": 0.6261,
+  "model": "TF-IDF(max_features=20000, ngram_range=(1, 2), min_df=2) + LogisticRegression(C=5.0)",
+  "artifacts": [
+    "emotion_model.joblib",
+    "label_names.txt",
+    "classification_report.csv",
+    "confusion_matrix.png",
+    "lime_example.png",
+    "lime_terms.csv"
+  ]
+}
